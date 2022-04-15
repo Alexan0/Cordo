@@ -1737,7 +1737,6 @@ body {
 .slider__item-services {
   position: relative;
   max-width: 370px;
-  height: 482px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
