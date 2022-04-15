@@ -46,10 +46,10 @@
 	&__image-services{
 		position: relative;
 		opacity: .5;
-		max-width: 100%;
+		max-width: 335px;
 		@media (max-width: $md4){
 			img{
-				width: 100%;
+				width: 335px;
 				height: 100%;
 				object-fit: cover;
 			}

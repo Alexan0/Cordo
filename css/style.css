@@ -1753,11 +1753,11 @@ body {
 .item__image-services {
   position: relative;
   opacity: 0.5;
-  max-width: 100%;
+  max-width: 335px;
 }
 @media (max-width: 479.98px) {
   .item__image-services img {
-    width: 100%;
+    width: 335px;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
