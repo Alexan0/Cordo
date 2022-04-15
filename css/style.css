@@ -1737,6 +1737,7 @@ body {
 .slider__item-services {
   position: relative;
   max-width: 370px;
+  height: 482px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1756,6 +1757,7 @@ body {
 }
 @media (max-width: 479.98px) {
   .item__image-services img {
+    display: block;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1825,7 +1827,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -20px 0 0 0;
+  margin: 10px 0 0 0;
   position: relative;
 }
 
