@@ -1754,24 +1754,10 @@ body {
   position: relative;
   opacity: 0.5;
 }
-@media (max-width: 479.98px) {
-  .item__image-services img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
 .item__info-services {
   position: absolute;
   left: 5%;
   bottom: 15%;
-}
-@media (max-width: 479.98px) {
-  .item__info-services {
-    left: 5%;
-    bottom: 12%;
-  }
 }
 
 .info__title-services {
@@ -1779,12 +1765,6 @@ body {
   font-size: 22px;
   line-height: 27px;
   margin: 0px 0px 13px 0px;
-}
-@media (max-width: 479.98px) {
-  .info__title-services {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 .info__text-services {
   font-weight: 400;
