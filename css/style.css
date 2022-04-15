@@ -2091,7 +2091,7 @@ body {
     width: 335px;
     font-size: 16px;
     line-height: 19px;
-    padding: 12px 85px 12px 22px;
+    padding: 12px 60px 12px 22px;
   }
 }
 .item__text-faq {
@@ -2105,7 +2105,7 @@ body {
   background-color: #fff;
   border-radius: 0 0 10px 10px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .item__text-faq {
     width: 335px;
     font-size: 14px;
@@ -2209,6 +2209,12 @@ body {
 }
 .item__title-faq.active:after {
   background: url("../img/icons/arrow-circle-left-gold.svg") 0 0 no-repeat;
+}
+
+@media (max-width: 767.98px) {
+  .center {
+    padding: 19px 60px 19px 22px;
+  }
 }
 
 /*----------------TXT------------------*/

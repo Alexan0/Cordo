@@ -84,7 +84,7 @@
 			width: 335px;
 			font-size: 16px;
 			line-height: 19px;
-			padding: 12px 85px 12px 22px;
+			padding: 12px 60px 12px 22px;
 		}
 	}
 	&__text-faq {
@@ -97,7 +97,7 @@
 		color: #282B38;
 		background-color: #fff;
 		border-radius: 0 0 10px 10px;
-		@media (max-width: $md4){
+		@media (max-width: $md3){
 			width: 335px;
 			font-size: 14px;
 			line-height: 20px;
@@ -191,5 +191,10 @@
 	border-radius: 10px 10px 0px 0px;
 	&:after{
 		background: url('../img/icons/arrow-circle-left-gold.svg') 0 0 no-repeat;
+	}
+}
+.center{
+	@media (max-width: $md3){
+		padding: 19px 60px 19px 22px;
 	}
 }
