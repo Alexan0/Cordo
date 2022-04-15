@@ -1,0 +1,122 @@
+
+.adv {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: #363A4D;
+	border-radius: 20px;
+	padding: 90px 0px 120px 0px; 
+	@media (max-width: $md3){
+		padding: 55px 0px 60px 0px; 
+	}
+	&__head {
+		position: relative;
+		.head{
+			@media (max-width: $md3){
+				div{
+					font-size: 24px;
+					line-height: 30px;
+				}
+			}
+			&:after{
+				background-color: #E58D35;
+				position: absolute;
+				top: 140%;
+				left: 50%;
+				transform: translate3d(-50%, -50%, 0px);
+			}
+		}
+	}
+	&__slider {
+		margin: 60px 0px 0px 0px;
+		position: relative;
+		@include flexbox();
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__item {
+		max-width: 263px;
+		padding: 20px 0;
+		margin: 0 20px;
+		@media (max-width: 900px){
+			margin: 0 auto;
+			opacity: 0;
+			transition: all .3s linear;
+		}
+	}
+}
+.item {
+	&__icon {
+		width: 113px;
+		height: 113px;
+		border-radius: 50%;
+		border: 1px solid #6C7188;
+		position: relative;
+		margin: 0 auto;
+	}
+	&__bg {
+		width: 93px;
+		height: 93px;
+		border-radius: 50%;
+		background-color: #89C249;
+		position: absolute;
+		top: 8%;
+		left: 8%;
+		img{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate3d(-50%, 50%, 0px);
+		}
+	}
+	&__text {
+		width: 240px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 22px 0px 0px 0px;
+	}
+}
+
+.adv__slider .slick-arrow{
+	position: absolute;
+	top: 42%;
+	z-index: 5;
+	font-size: 0;
+	width: 22px;
+	height: 41px;
+}
+.adv__slider .slick-dots{
+	@include flexbox();
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0 0 0;
+	position: relative;
+}
+.adv__slider .slick-dots li{
+	margin: 0px 26px 0px 0px;
+	&:last-child{
+		margin: 0;
+	}
+}
+.adv__slider .slick-dots li button{
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.adv__slider .slick-dots li.slick-active button{
+	background: transparent;
+	border: 2px solid #fff;
+}
+.slick-list {
+	overflow: hidden;
+}
+.adv__slider .slick-track{
+	@include flexbox();
+}
+.adv__slider .slick-active{
+	opacity: 1;
+}

@@ -1,0 +1,124 @@
+@import 'nulling_styles.scss';// ОБНУЛЯЕМ СТИЛИ
+@import 'fonts.scss';// ПОДКЛЮЧАЕМ ШРИФТЫ
+@import 'forms.scss';// СТИЛИ ДЛЯ ФОРМ
+
+//--------------------МИКСИНЫ-----------------
+@mixin flexbox(){display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;font-size: 0;}
+@mixin flexboxinline(){display: -webkit-inline-flex;display: -moz-inline-flex;display: -ms-inline-flex;display: -o-inline-flex;display: inline-flex;}
+
+//----ШРИФТ ПО УМОЛЧАНИЮ
+
+$ff: 'Proxima Nova';
+
+//----ШРИФТ ПО УМОЛЧАНИЮ
+
+
+//----ПЕРЕМЕННЫЕ
+$min-width: 320px;
+$mw: 1170px;
+$md1:$mw+12;
+$md2:992.98px;
+$md3:767.98px;
+$md4:479.98px;
+//----ПЕРЕМЕННЫЕ
+
+
+/*--------------ОСНОВНАЯ ЧАСТЬ------------*/
+
+body{
+	font-family: $ff;
+	background-color: #282B38;
+	font-weight: 400;
+	color: #FFFFFF;
+
+}
+
+@media (max-width: 829px){
+	body.lock{
+		overflow: hidden;
+	}
+}
+
+//------CONTAINER
+.container{
+	max-width: $mw;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: $md2){}
+	@media (max-width: $md3){}
+	@media (max-width: $md4){}
+}
+
+//----ОБОЛОЧКА СТРАНИЦЫ
+.wrap {
+	min-height: 100%;
+	overflow: hidden;
+	@include flexbox();
+	flex-direction: column;	
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+/*-----------ГОТОВЫЕ БЛОКИ---------------*/
+@import 'ui.scss';
+
+/*----------------HEADER------------------*/
+@import 'header.scss';
+
+/*----------------INTRO------------------*/
+@import 'intro.scss';
+
+/*----------------CALC------------------*/
+@import 'calc.scss';
+
+/*----------------ADV------------------*/
+@import 'adv.scss';
+
+/*----------------DELIVERY------------------*/
+@import 'delivery.scss';
+
+/*----------------SERVICES------------------*/
+@import 'services.scss';
+
+/*----------------ABOUT------------------*/
+@import 'about.scss';
+
+/*----------------FAQ------------------*/
+@import 'faq.scss';
+
+/*----------------TXT------------------*/
+@import 'txt.scss';
+
+/*----------------FOOTER------------------*/
+@import 'footer.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

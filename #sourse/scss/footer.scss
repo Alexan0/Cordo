@@ -1,0 +1,153 @@
+.footer {
+	padding: 60px 0px 60px 0px;
+	&:before{
+		content: '';
+		display: block;
+		width: 1140px;
+		height: 2px;
+		background: #E58D35;
+		margin: 0 auto 20px;
+		@media (max-width: $md3){
+			width: 335px;
+		}
+	}
+	&__row {
+		@include flexbox();
+		font-size: 16px;
+		justify-content: space-between;
+	}
+	&__info {
+		flex: 0 0 20%;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 23px;
+		color: #FFFFFF;
+		li{
+			margin: 0px 0px 5px 0px;
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+	&__logo {
+		@include flexbox();
+		align-items: center;
+		position: relative;
+		img{
+			margin: 0px 10px 0px 0px;
+		}
+	&__delivery {}
+	&__services {}
+	&__information {}
+}
+.logo {
+	&__text {
+		position: relative;
+			width: 110px;
+			color: #fff;
+			font-weight: 700;
+			font-size: 24px;
+			@media (max-width: $md3){
+				text-align: left;
+			}
+			p{
+				font-weight: 400;
+			}
+			span{
+				display: block;
+				position: absolute;
+				bottom: 5%;
+				left: 45%;
+				font-size: 14px;
+				font-weight: 700;
+				background-color: #89C249;
+				width: 57px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+			}
+		}	
+	}
+}
+.info {
+	&__social {
+		@include flexbox();
+		margin: 15px 0px 0px 0px;
+		a{
+			margin: 0px 8px 0px 0px;
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+}
+
+
+
+.link__phone {
+	color: inherit;
+}
+.link__mail {
+	color: inherit;
+	text-decoration: underline;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.link__addres{
+	color: inherit;
+}
+.link__title{
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 29px;
+	color: #FFFFFF;
+	margin: 0px 0px 10px 0px;
+}
+.link__item{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	text-decoration-line: underline;
+	color: #85899C;
+	margin: 5px 0px 5px 0px;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: $md3){
+	.footer__delivery{
+		display: none;
+	}
+	.footer__services {
+		display: none;
+	}
+	.footer__information {
+		display: none;
+	}
+	.footer__info{
+		text-align: center;
+		width: 263px;
+	}
+	.footer__row{
+		justify-content: center;
+		align-items: center;
+	}
+	.info__social{
+		justify-content: center;
+	}
+	.link__addres{
+		display: block;
+		width: 263px;
+		text-align: center;
+		span{
+			display: block;
+		}
+	}
+	.footer__logo{
+		justify-content: center;
+	}
+}
