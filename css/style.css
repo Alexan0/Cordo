@@ -1450,7 +1450,7 @@ body {
           transform: translate3d(-50%, -50%, 0px);
 }
 .slider__item-delivery {
-  max-width: 360px;
+  width: 360px;
   height: 482px;
   border-radius: 20px;
   background: #363A4D;
@@ -1467,6 +1467,7 @@ body {
 
 .item__photo {
   margin: 0px 0px 27px 0px;
+  max-width: 360px;
 }
 .item__photo img {
   border-radius: 20px;
@@ -1757,6 +1758,8 @@ body {
   .item__image-services img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .item__info-services {

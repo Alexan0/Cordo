@@ -5,7 +5,7 @@ function ibg(){
 let ibg=document.querySelectorAll(".ibg");
 for (var i = 0; i < ibg.length; i++) {
 if(ibg[i].querySelector('img')){
-ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('data-lazy')+')';
 }
 }
 }
@@ -44,6 +44,7 @@ $(document).ready(function(){
 		rows: 1,					//Ряды слайдера
 		slidesPerRow:1,				//Кол во слайдов в ряду
 		vertical: false,			//Вертикальный слайдер
+		lazyLoad: 'ondemand',
 	})
 })
 
@@ -119,6 +120,7 @@ $(document).ready(function(){
 		rows: 1,					//Ряды слайдера
 		slidesPerRow:1,				//Кол во слайдов в ряду
 		vertical: false,			//Вертикальный слайдер
+		lazyLoad: 'ondemand',
 		responsive: [
 	    {
 	      breakpoint: 1170,
@@ -164,6 +166,7 @@ $(document).ready(function(){
 		rows: 1,					//Ряды слайдера
 		slidesPerRow:1,				//Кол во слайдов в ряду
 		vertical: false,			//Вертикальный слайдер
+		lazyLoad: 'ondemand',
 		responsive: [
 	    {
 	      breakpoint: 1170,
