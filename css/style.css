@@ -444,7 +444,7 @@ body {
 }
 
 .header__menu.active {
-  top: 0;
+  top: 15%;
 }
 
 .header__burger.active span:nth-of-type(1) {
