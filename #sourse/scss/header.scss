@@ -57,10 +57,14 @@
 .menu {
 	&__list {
 		@include flexbox();
+		&:nth-child(6){
+			display: inline-block;
+			text-align: center;
+		}
 		.list_btn{
 			display: none;
 			@media (max-width: 829px){
-				display: block;
+				display: inline-block;
 				line-height: 66px;
 				font-family: 'Proxima Nova';
 				color: #fff;
@@ -165,6 +169,8 @@
 		background-color: #363A4D;
 		transition: all .3s ease;
 		overflow: auto;
+		display: block;
+		padding: 37px 0px 0px 0px; 
 	}
 }
 .header__menu.active{
