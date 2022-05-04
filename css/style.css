@@ -1771,7 +1771,7 @@ body {
 }
 .item__info-services {
   position: absolute;
-  left: 12%;
+  left: 16%;
   bottom: 15%;
 }
 @media (max-width: 479.98px) {
